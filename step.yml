@@ -54,24 +54,20 @@ inputs:
       title: "Path to Binary"
       summary: Path to the IPA or APK file.
       is_required: true
-  # - example_step_input: Default Value - you can leave this empty if you want to
-  #   opts:
-  #     title: "Example Step Input"
-  #     summary: Summary. No more than 2-3 sentences.
-  #     description: |
-  #       Description of this input.
+  - platform:
+    opts:
+      title: "App Platform"
+      summary: The platform (android/ios) of the app.
+      is_required: true
+      value_options: [ios,android]
+  - api_key:
+    opts:
+      title: "Kryptowire API Key"
+      summary: API key of the user.
+      is_required: true
 
-  #       Can be Markdown formatted text.
-  #     is_expand: true
-  #     is_required: true
-  #     value_options: []
-
-# outputs:
-#   - EXAMPLE_STEP_OUTPUT:
-#     opts:
-#       title: "Example Step Output"
-#       summary: Summary. No more than 2-3 sentences.
-#       description: |
-#         Description of this output.
-
-#         Can be Markdown formatted text.
+outputs:
+  - KRYPTOWIRE_UUID:
+    opts:
+      title: "Kryptowire UUID"
+      summary: UUID of the submitted app for analysis.
