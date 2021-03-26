@@ -49,12 +49,12 @@ toolkit:
 
 
 inputs:
-  - path_to_binary:
+  - path_to_binary: "$BITRISE_PKG_PATH"
     opts:
       title: "Path to Binary"
       summary: Path to the IPA or APK file.
       is_required: true
-  - platform:
+  - platform: "ios"
     opts:
       title: "App Platform"
       summary: The platform (android/ios) of the app.
