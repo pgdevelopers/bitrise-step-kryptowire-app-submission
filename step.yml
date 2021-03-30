@@ -65,6 +65,7 @@ inputs:
       title: "Kryptowire API Key"
       summary: API key of the user.
       is_required: true
+      is_sensitive: true
 
 outputs:
   - KRYPTOWIRE_UUID:
